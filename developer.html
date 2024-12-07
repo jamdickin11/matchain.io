@@ -1,0 +1,361 @@
+<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Fri Dec 06 2024 19:41:15 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.matchain.io" data-wf-page="66bbca7ce738a70465819b06" data-wf-site="66ac74bb0b4e9c269ef43d28" data-wf-status="1" lang="en"><head><meta charset="utf-8"/><title>Developer</title><meta content="Matchain is a decentralized AI blockchain designed to secure and scale AI applications while prioritizing decentralized identity (DID) and data sovereignty." name="description"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><link href="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/css/matchain-3.webflow.20a048cb2.css" rel="stylesheet" type="text/css"/><link href="index.html" rel="preconnect"/><link href="index.html" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Roboto Mono:300,regular,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66ce4abd0aec5572027f79ce_MATCHCHAIN_FAVICON.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66ce4ad50e26f13e85eeb467_MATCHAIN%20logo%20small.png" rel="apple-touch-icon"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZYVC0JV03J"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-ZYVC0JV03J');</script><link href="https://fonts.googleapis.com/css?family=Fira+Mono:400" rel="stylesheet">
+
+<!-- Keep this css code to improve the font quality-->
+<style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+}
+
+</style>
+<style>
+  .w-webflow-badge{
+  	display:none !important;
+  }
+</style>
+
+</head><body><div class="page-wrapper"><div class="global-styles w-embed"><style>
+
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 1 lines of text */
+.text-style-1lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.blog-category:before {
+    content: "[ ] ";
+}
+
+.blog-category.is-active:before {
+    content: "[ X ]";
+}
+</style>
+
+
+<style>
+/* for blogs */
+ .blog3-header_item:first-child .blog3-header_image-wrapper {
+    height:100%;
+    min-height:20rem;
+}
+ .blog3-header_item:first-child .blog3-header_inside-item {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 0.5fr;
+    grid-auto-columns: 1fr;
+    align-items: stretch;
+    display: grid;
+}
+
+@media screen and (max-width: 900px) {
+    .blog3-header_item:first-child .blog3-header_image-wrapper {
+  height:100%;
+  min-height:auto;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .div-block-49 {
+        grid-template-columns: 1fr;
+    }
+    
+     .blog3-header_item:first-child .blog3-header_inside-item {
+        flex-flow: column;
+        display: flex;
+    
+}
+}
+
+.community_item:nth-child(4n+2) {
+    background: repeating-linear-gradient(45deg, #212121, #141414);
+
+}
+.community_item:nth-child(4n+3) {
+    background: repeating-linear-gradient(45deg, #212121, #141414);
+
+}
+
+
+
+</style>
+<!--glitch css
+<style>
+.glitch {
+  position: relative;
+  color: #fff;
+  font-size: 80px;
+}
+
+.line:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.line:nth-child(1) {
+  animation: clip 3000ms -300ms linear infinite, glitch1 500ms linear infinite;
+}
+
+.line:nth-child(2) {
+  animation: clip 3000ms -600ms linear infinite, glitch2 500ms linear infinite;
+}
+
+/* Add similar styles for line:nth-child(3) to line:nth-child(10) */
+
+@keyframes glitch1 {
+  0% { transform: translateX(0); }
+  80% { transform: translateX(0); color: #fff; }
+  85% { transform: translateX(calc(var(--random, 0px) - 5px)); color: #4E9A26; }
+  90% { transform: translateX(calc(var(--random, 0px) - 5px)); color: #AC1212; }
+  95% { transform: translateX(calc(var(--random, 0px) - 5px)); color: #fff; }
+  100% { transform: translateX(0); }
+}
+
+/* Add similar @keyframes for glitch2 to glitch10 */
+
+@keyframes clip {
+  0% { clip-path: polygon(0 100%, 100% 100%, 100% 120%, 0 120%); }
+  100% { clip-path: polygon(0 -20%, 100% -20%, 100% 0%, 0 0); }
+}
+</style> --></div><div data-animation="default" class="navbar_component-2-2 w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="f3e1306c-2196-11f1-b2e7-392acd76511f" role="banner" data-duration="400"><div class="navbar_container-2-2"><a href="index.html" id="w-node-f3e1306c-2196-11f1-b2e7-392acd765121-cd76511f" class="navbar_logo-link-2-2 w-nav-brand"><img src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66ac74bb0b4e9c269ef43e10_logo.svg" loading="lazy" alt="" class="navbar_logo"/></a><nav role="navigation" id="w-node-f3e1306c-2196-11f1-b2e7-392acd765123-cd76511f" class="navbar_menu--2 is-page-height-tablet w-nav-menu"><a href="matchid.html" class="navbar_link-2-2 w-nav-link">MatchID</a><div data-hover="true" data-delay="0" class="dropdown-2 w-dropdown"><div class="navbar_link-2-2 dd w-dropdown-toggle"><div class="text-block-12">Bridge</div><div class="icon w-icon-dropdown-toggle"></div></div><nav class="dropdown-list w-dropdown-list"><a href="https://app.routernitro.com/swap?fromChain=56&amp;fromToken=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&amp;toToken=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" class="navbar_link-2-2 dropdown w-dropdown-link">Nitro</a><a href="https://www.orbiter.finance/?source=Ethereum&amp;dest=Matchain&amp;token=USDC" class="navbar_link-2-2 dropdown w-dropdown-link">Orbiter</a><a href="https://owlto.finance/?to=Matchain" class="navbar_link-2-2 dropdown w-dropdown-link">Owlto</a><a href="index.html" class="navbar_link-2-2 dropdown w-dropdown-link">IncaSwap</a></nav></div><a href="https://app.routernitro.com/swap?fromChain=56&amp;fromToken=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&amp;toToken=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" class="navbar_link-2-2 hide w-nav-link">Bridge</a><a href="ecosystem.html" class="navbar_link-2-2 w-nav-link">Ecosystem</a><a href="wallet.html" class="navbar_link-2-2 w-nav-link">Wallets</a><div data-hover="true" data-delay="0" class="dropdown-2 w-dropdown"><div class="navbar_link-2-2 dd w-dropdown-toggle"><div class="text-block-12">Developers</div><div class="icon w-icon-dropdown-toggle"></div></div><nav class="dropdown-list w-dropdown-list"><a href="developer.html" aria-current="page" class="navbar_link-2-2 dropdown w-dropdown-link w--current">Build</a><a href="index.html" target="_blank" class="navbar_link-2-2 dropdown w-dropdown-link">Documentation</a><a href="tools.html" class="navbar_link-2-2 dropdown w-dropdown-link">Tools</a></nav></div><div data-hover="true" data-delay="0" class="dropdown-2 w-dropdown"><div class="navbar_link-2-2 dd w-dropdown-toggle"><div class="text-block-12">Network</div><div class="icon w-icon-dropdown-toggle"></div></div><nav class="dropdown-list w-dropdown-list"><a href="index.html" class="navbar_link-2-2 dropdown w-dropdown-link">Testnet</a><a href="index.html" target="_blank" class="navbar_link-2-2 dropdown w-dropdown-link">Mainnet</a><a href="index.html" class="navbar_link-2-2 dropdown w-dropdown-link">Network Status</a></nav></div><a href="blog.html" class="navbar_link-2-2 w-nav-link">Blog</a><a href="#" class="button-2 is-navbar2-button show-landscape w-button">Testnet</a></nav><div id="w-node-f3e1306c-2196-11f1-b2e7-392acd76512c-cd76511f" class="navbar_button-wrapper"><a href="index.html" target="_blank" class="button-2 is-navbar2-button hide-mobile-landscape w-button">Testnet Migrating</a><div class="navbar_menu-button w-nav-button"><div class="menu-icon2"><div class="menu-icon2_line-top-2"></div><div class="menu-icon2_line-middle-2"><div class="menu-icon_line-middle-inner"></div></div><div class="menu-icon2_line-bottom-2"></div></div></div></div></div></div><div class="main-wrapper"><header class="section_header"><div class="padding-global"><div class="container-medium"><div class="header_content is-100"><div class="padding-section-xlarge"><div data-w-id="d933de8b-4f09-e36e-5759-8cb0ae337bae" style="opacity:0" class="text-align-center"><div class="margin-bottom margin-medium"><div class="glitch"><h1 animate="" class="text-style-allcaps text-weight-light"><span class="text-color-orange text-weight-medium line">Build Digital Identity</span> <span class="line">Solutions With Matchain</span></h1></div></div><div class="margin-bottom margin-medium"><div class="max-width-large align-center"><p>Unleash your potential, unlock the full power of Matchain&#x27;s blockchain. Join our ecosystem and revolutionize AI, Web3, and the future of digital identity management.</p></div></div><div><div class="button-group is-center"><a href="https://matchain.app.starton.com/auth/login?redirect_to=https://matchain.app.starton.com/projects" target="_blank" class="button-2 is-icon max-width-full-mobile-landscape w-inline-block"><div>Tools</div><img src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66b26af331265746850887b4_right-arrow.svg" loading="lazy" alt="" class="icon-1x1-xxsmall inverted"/></a><a href="index.html" target="_blank" class="button-2 is-secondary is-alternate is-icon max-width-full-mobile-landscape w-inline-block"><div>Documentation</div><img src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66b26af331265746850887b4_right-arrow.svg" loading="lazy" alt="" class="icon-1x1-xxsmall inverted"/></a></div></div></div></div></div></div></div><div class="header_background-video-wrapper"><div data-poster-url="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3883281bc2c18ec367d36_Video%20Additional%202-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3883281bc2c18ec367d36_Video%20Additional%202-transcode.mp4,https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3883281bc2c18ec367d36_Video%20Additional%202-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="be5b8421-6df2-2d6d-d801-f32993b12395-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3883281bc2c18ec367d36_Video%20Additional%202-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3883281bc2c18ec367d36_Video%20Additional%202-transcode.mp4" data-wf-ignore="true"/><source src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3883281bc2c18ec367d36_Video%20Additional%202-transcode.webm" data-wf-ignore="true"/></video></div><div class="layer"></div></div></header><section class="section_layout3"><div class="padding-global"><div class="container-large"><div class="padding-section-large"><div class="layout3_component"><div class="margin-bottom margin-xxlarge xs-m"><div class="max-width-large glitch"><h2 data-w-id="89f4d26f-37b4-3d50-275e-0b53d6eacc03" style="opacity:0" class="text-weight-light line">Real World<span class="text-weight-medium"> Use Cases</span></h2></div></div><div data-w-id="5a161190-7113-a80f-c7fa-c7b2b17603df" class="w-layout-grid layout3_list"><a href="#" class="layout3_item _1-copy-copy _1 w-inline-block"><div class="div-block-44"><div class="code-embed-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 154 185" fill="none">
+<path d="M233.065 138.976C219.462 115.007 198.221 96.331 172.76 85.9541C185.421 76.4208 194.774 63.1299 199.493 47.9638C204.212 32.7978 204.058 16.5256 199.053 1.45217C194.048 -13.6212 184.446 -26.7316 171.607 -36.022C158.768 -45.3123 143.343 -50.3115 127.517 -50.3115C111.69 -50.3115 96.2648 -45.3123 83.4257 -36.022C70.5866 -26.7316 60.9847 -13.6212 55.9799 1.45217C50.9751 16.5256 50.8213 32.7978 55.5402 47.9638C60.2592 63.1299 69.6116 76.4208 82.2728 85.9541C56.8125 96.331 35.571 115.007 21.9676 138.976C21.1247 140.337 20.5629 141.854 20.3156 143.437C20.0684 145.02 20.1406 146.637 20.5282 148.191C20.9157 149.745 21.6106 151.206 22.5716 152.485C23.5325 153.765 24.7399 154.837 26.1219 155.639C27.5039 156.44 29.0323 156.955 30.6163 157.151C32.2003 157.348 33.8076 157.223 35.3425 156.784C36.8774 156.344 38.3087 155.6 39.5512 154.594C40.7938 153.588 41.8222 152.342 42.5754 150.929C60.5538 119.732 92.3038 101.125 127.517 101.125C162.729 101.125 194.479 119.742 212.458 150.929C214.09 153.564 216.679 155.459 219.677 156.212C222.676 156.966 225.848 156.519 228.524 154.967C231.201 153.414 233.171 150.878 234.018 147.894C234.866 144.91 234.524 141.712 233.065 138.976ZM75.9228 25.4215C75.9228 15.177 78.9487 5.16264 84.6179 -3.35532C90.2871 -11.8733 98.3449 -18.5122 107.772 -22.4326C117.2 -26.353 127.574 -27.3787 137.582 -25.3801C147.59 -23.3815 156.783 -18.4484 163.999 -11.2044C171.214 -3.96052 176.128 5.2688 178.119 15.3164C180.11 25.364 179.088 35.7786 175.183 45.2433C171.278 54.7079 164.665 62.7975 156.18 68.489C147.696 74.1805 137.721 77.2184 127.517 77.2184C113.838 77.2025 100.724 71.7403 91.0517 62.0299C81.3794 52.3196 75.9385 39.154 75.9228 25.4215Z" fill="currentcolor"/>
+</svg></div></div><div><div class="margin-bottom margin-small"><img src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66bbcd03445857fdd45c782c_Logo%20(2).svg" loading="lazy" alt="" class="icon-1x1-large"/></div><div class="margin-bottom margin-xsmall"><h3 class="heading-style-h5">Identity Verification</h3></div><p class="layout3_text">Create secure and user-friendly identity verification solutions, ensuring seamless authentication and protecting against fraud.</p></div><div class="margin-top margin-small"><div class="button-group"><div class="button-3 is-link is-icon-copy hide"><div>Create MatchID</div><div class="icon-embed-xxsmall w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"/>
+</svg></div></div></div></div></a><a id="w-node-_5a161190-7113-a80f-c7fa-c7b2b17603f1-b17603df" href="#" class="layout3_item _1-copy-copy w-inline-block"><div><div class="margin-bottom margin-small"><img src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66bbcf10ceeba5fda84492d5_Logo%20(3).svg" loading="lazy" alt="" class="icon-1x1-large"/></div><div class="margin-bottom margin-xsmall"><h3 class="heading-style-h5">Defi</h3></div><p class="layout3_text">Build secure and reliable DeFi applications, ensuring robust identity verification and transaction integrity within your financial solutions.</p></div><div class="margin-top margin-small"><div class="button-group"><div class="button-3 is-link is-icon-copy hide"><div>Create MatchID</div><div class="icon-embed-xxsmall w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"/>
+</svg></div></div></div></div></a><a id="w-node-_5a161190-7113-a80f-c7fa-c7b2b1760400-b17603df" href="#" class="layout3_item _1-copy-copy _3 w-inline-block"><div><div class="margin-bottom margin-small"><img src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66bbd3a59e672dd806d76917_Logo%20(4).svg" loading="lazy" alt="" class="icon-1x1-large"/></div><div class="margin-bottom margin-xsmall"><h3 class="heading-style-h5">Gaming</h3></div><p class="layout3_text">Enhance gaming experiences with secure player identity management, in-game asset protection, and fair play verification.</p></div><div class="margin-top margin-small"><div class="button-group"><div class="button-3 is-link is-icon-copy hide"><div>Create MatchID</div><div class="icon-embed-xxsmall w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"/>
+</svg></div></div></div></div></a><a id="w-node-_5a161190-7113-a80f-c7fa-c7b2b176040f-b17603df" href="#" class="layout3_item _1-copy-copy _4 w-inline-block"><div><div class="margin-bottom margin-small"><img src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66bbd43c004380f883b53278_Logo%20(5).svg" loading="lazy" alt="" class="icon-1x1-large"/></div><div class="margin-bottom margin-xsmall"><h3 class="heading-style-h5">Social</h3></div><p class="layout3_text">Create secure and trustworthy social platforms, enabling safe and verified interactions while protecting user data and privacy</p></div><div class="margin-top margin-small"><div class="button-group"><div class="button-3 is-link is-icon-copy hide"><div>Create MatchID</div><div class="icon-embed-xxsmall w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"/>
+</svg></div></div></div></div></a></div></div><div class="margin-top margin-xhuge"><div class="layout3_component"><div class="margin-bottom margin-large"><div class="max-width-large glitch"><h2 data-w-id="89f4d26f-37b4-3d50-275e-0b53d6eacc46" style="opacity:0" class="text-weight-light line">Developer <span class="text-weight-medium">tool kit</span></h2></div></div><div data-w-id="89f4d26f-37b4-3d50-275e-0b53d6eacc48" style="opacity:0" class="w-layout-grid layout3_list is-col2"><a href="matchid.html" class="layout3_item w-inline-block"><div><div class="margin-bottom margin-xsmall"><h3 class="heading-style-h5">MatchID SDK</h3></div><p class="layout3_text">In the Web2 ecosystem, giants like Google and Meta harvest and monetize your data without clear consent or transparency. This often leaves users in the dark about how their information is used.  MatchID transforms this dynamic by giving you full control over your data and identity.</p></div><div class="margin-top margin-small"><div class="button-group"><div class="button-3 is-link is-icon-copy"><div>Coming Soon</div><div class="icon-embed-xxsmall w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"/>
+</svg></div></div></div></div></a><a href="https://matchain.app.starton.com/auth/login?redirect_to=https://matchain.app.starton.com/projects" target="_blank" class="layout3_item w-inline-block"><div><div class="margin-bottom margin-xsmall"><h3 class="heading-style-h5">Matchain Playground</h3></div><p class="layout3_text">Experiment, build, and test your applications in a secure and supportive environment with our Matchain Playground, designed to foster innovation and collaboration.</p></div><div class="margin-top margin-small"><div class="button-group"><div class="button-3 is-link is-icon-copy"><div>Learn more about Matchain SDK</div><div class="icon-embed-xxsmall w-embed"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 3L11 8L6 13" stroke="CurrentColor" stroke-width="1.5"/>
+</svg></div></div></div></div></a></div></div></div></div></div></div><div class="blurred-background-wrapper"><div class="blurred-background no"></div></div></section><section class="section_cta"><div class="padding-global"><div class="container-small"><div class="padding-section-large"><div data-w-id="9dc2b557-770e-f2c2-8c41-33bed8c67f08" class="text-align-center"><div class="margin-bottom margin-xsmall glitch"><h2 animate="" class="text-weight-light line"><span class="line">Start Building on</span> <span class="text-color-orange text-weight-medium line">Matchain Today</span></h2></div><p>Dive into our comprehensive developer resources and join the ranks of innovative projects shaping the future.</p><div class="margin-top margin-medium"><div class="button-group is-center"><a href="https://matchain.app.starton.com/auth/login?redirect_to=https://matchain.app.starton.com/projects" target="_blank" class="button-2 is-icon max-width-full-mobile-landscape w-inline-block"><div>Tools</div><img src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66b26af331265746850887b4_right-arrow.svg" loading="lazy" alt="" class="icon-1x1-xxsmall inverted"/></a><a href="index.html" target="_blank" class="button-2 is-secondary is-alternate is-icon max-width-full-mobile-landscape w-inline-block"><div>Documentation</div><img loading="lazy" src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66b26af331265746850887b4_right-arrow.svg" alt="" class="icon-1x1-xxsmall inverted"/></a></div></div></div></div></div></div><div class="cta_background-image-wrapper"><div class="image-overlay-layer"></div><div data-poster-url="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3779f59494044770ddc5f_Video%20Additional-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3779f59494044770ddc5f_Video%20Additional-transcode.mp4,https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3779f59494044770ddc5f_Video%20Additional-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="cta_background-image w-background-video w-background-video-atom"><video id="9dc2b557-770e-f2c2-8c41-33bed8c67f24-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3779f59494044770ddc5f_Video%20Additional-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3779f59494044770ddc5f_Video%20Additional-transcode.mp4" data-wf-ignore="true"/><source src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28%2F66c3779f59494044770ddc5f_Video%20Additional-transcode.webm" data-wf-ignore="true"/></video></div></div></section></div><footer class="footer_component"><div class="padding-global"><div class="container-large"><div class="footer_component-inner"><div class="padding-vertical padding-large"><div class="footer_newsletter-wrapper"><div class="footer_newsletter-text-wrapper"><div class="margin-bottom margin-xsmall"><div class="text-color-orange">Stay Informed</div></div><div class="max-width-22"><p class="text-size-medium font-general">Subscribe to the newsletter to hear about Matchain updates and events</p></div></div><div class="footer_form-block hide w-form"><form id="wf-form-Newsletter-Form" name="wf-form-Newsletter-Form" data-name="Newsletter Form" method="get" class="footer_form" data-wf-page-id="66bbca7ce738a70465819b06" data-wf-element-id="091880ea-ca20-568c-3f14-b462b0f84202"><input class="footer_form-input w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="Email-3" required=""/><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f84204-b0f841f5" href="#" class="button-2 is-icon w-inline-block"><div>Subscribe</div><img loading="lazy" src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66b26af331265746850887b4_right-arrow.svg" alt="" class="icon-1x1-xxsmall inverted"/></a></form><div class="footer_success-message w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="error-message w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><div id="w-node-_5f459b6d-ae1f-4252-fb8e-45cf25eabba7-b0f841f5" class="code-embed-4 width50 w-embed w-iframe"><iframe src="https://embeds.beehiiv.com/da86f5cf-7912-48fc-8d17-babab75cb2bb?slim=true" data-test-id="beehiiv-embed" width="100%"  height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe></div></div><div><div class="padding-top padding-large"><div class="footer_line-divider"></div><div class="padding-bottom"><div class="footer_headers-wrapper"><div id="w-node-_510fb846-8228-5e2c-cbef-e5da5ba58af3-b0f841f5"><div class="footer_column-heading">Resources</div><div id="w-node-_284586c0-f781-f53f-d5ae-0cab378dca07-b0f841f5" class="footer_links-wrapper show-landscape"><a id="w-node-_284586c0-f781-f53f-d5ae-0cab378dca08-b0f841f5" href="matchid.html">MatchID</a><a id="w-node-_284586c0-f781-f53f-d5ae-0cab378dca0c-b0f841f5" href="blog.html">Blog</a><a id="w-node-_284586c0-f781-f53f-d5ae-0cab378dca0e-b0f841f5" href="index.html" target="_blank">Documentation</a><a id="w-node-_5ba852c0-e0e3-95f3-4628-5b0bd0c6ad9b-b0f841f5" href="https://app.routernitro.com/swap?fromChain=56&amp;fromToken=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&amp;toToken=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" target="_blank">Bridge</a><a id="w-node-_51d0bef9-ea8d-7dbf-83a9-b92e69a35328-b0f841f5" href="tools.html">Tools</a><a id="w-node-_284586c0-f781-f53f-d5ae-0cab378dca10-b0f841f5" href="https://drive.google.com/drive/folders/1wtcJ4_cRcP16SZduRx5A0-R9JTifzYsB" target="_blank">Brand Kit</a><a id="w-node-_284586c0-f781-f53f-d5ae-0cab378dca12-b0f841f5" href="developer.html" aria-current="page" class="w--current">Developers</a></div></div><div id="w-node-_68cbbc82-b510-b4d8-f8e3-f89504ce7afd-b0f841f5"><div id="w-node-_091880ea-ca20-568c-3f14-b462b0f84214-b0f841f5" class="footer_column-heading">Socials</div><div id="w-node-e9ad434a-b819-00ba-b62f-70c8720add6c-b0f841f5" class="footer_links-wrapper _4 show-landscape"><a href="https://t.me/matchain2022">Telegram</a><a id="w-node-e9ad434a-b819-00ba-b62f-70c8720add6f-b0f841f5" href="index.html">Gitbook</a><a id="w-node-e9ad434a-b819-00ba-b62f-70c8720add71-b0f841f5" href="https://discord.com/invite/matchain">Discord</a><a id="w-node-e9ad434a-b819-00ba-b62f-70c8720add73-b0f841f5" href="https://x.com/matchain_io">Twitter</a><a id="w-node-e9ad434a-b819-00ba-b62f-70c8720add75-b0f841f5" href="https://medium.com/@MATChain">Medium</a><a id="w-node-e9ad434a-b819-00ba-b62f-70c8720add77-b0f841f5" href="https://www.linkedin.com/company/matchainio/">Linkedin</a><a id="w-node-e9ad434a-b819-00ba-b62f-70c8720add79-b0f841f5" href="https://www.youtube.com/@MatchChain">Youtube</a></div></div><div id="w-node-_1a1579c0-f89c-1f2c-00ba-0733fbf88438-b0f841f5"><div id="w-node-_091880ea-ca20-568c-3f14-b462b0f84216-b0f841f5" class="footer_column-heading">Network</div><div id="w-node-_55004e20-ddf9-b220-798d-4b68ab945de7-b0f841f5" class="footer_links-wrapper col1 show-landscape"><a id="w-node-_55004e20-ddf9-b220-798d-4b68ab945de8-b0f841f5" href="#">MatchHub</a><a id="w-node-_55004e20-ddf9-b220-798d-4b68ab945dea-b0f841f5" href="#">Application</a></div></div></div></div><div class="margin-bottom margin-small"><div class="footer_line-divider"></div></div></div></div><div class="padding-bottom padding-medium pb-0"><div class="w-layout-grid footer_top-wrapper"><div id="w-node-_091880ea-ca20-568c-3f14-b462b0f8421b-b0f841f5" class="footer_links-wrapper hide-mobile-landscape"><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f8421c-b0f841f5" href="#" class="f-link">MatchID</a><a id="w-node-d715cb90-3aaa-3ad2-8962-8f006ec8cf52-b0f841f5" href="https://app.routernitro.com/swap?fromChain=56&amp;fromToken=0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE&amp;toToken=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" class="f-link">Bridge</a><a id="w-node-_349bb106-66d5-419f-551b-f27d070c88ac-b0f841f5" href="developer.html" aria-current="page" class="f-link w--current">Developers</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f8421e-b0f841f5" href="#" class="f-link hide">Whitepaper</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f84220-b0f841f5" href="blog.html" class="f-link">Blog</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f84222-b0f841f5" href="index.html" target="_blank" class="f-link">Documentation</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f84224-b0f841f5" href="tools.html" class="f-link">Tools</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f84226-b0f841f5" href="ecosystem.html" class="f-link">Ecosystem</a><a id="w-node-_587dd884-c3a6-8ca2-4e5a-cc671dd2fc7c-b0f841f5" href="wallet.html" class="f-link">Wallet</a><a id="w-node-_4944e4f9-90fc-d542-0da7-6d5b4014b23c-b0f841f5" href="https://drive.google.com/drive/folders/1wtcJ4_cRcP16SZduRx5A0-R9JTifzYsB?usp=sharing" target="_blank" class="f-link">Brand Kit</a></div><div id="w-node-_091880ea-ca20-568c-3f14-b462b0f84228-b0f841f5" class="footer_links-wrapper hide-mobile-landscape"><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f84229-b0f841f5" href="https://t.me/matchain_fam" target="_blank" class="f-link">Telegram</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f8422b-b0f841f5" href="index.html" class="f-link">Gitbook</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f8422d-b0f841f5" href="https://discord.com/invite/matchain" target="_blank" class="f-link">Discord</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f8422f-b0f841f5" href="https://x.com/matchain_io" target="_blank" class="f-link">Twitter</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f84231-b0f841f5" href="https://medium.com/@MATChain" target="_blank" class="f-link">Medium</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f84233-b0f841f5" href="https://www.linkedin.com/company/matchainio/" class="f-link">Linkedin</a><a id="w-node-_7dd82794-92a0-4d23-6501-e88d453192bd-b0f841f5" href="https://www.youtube.com/@MatchChain" target="_blank" class="f-link">Youtube</a><a id="w-node-_274ea035-cbf4-3d31-7244-d040d182997f-b0f841f5" href="#" class="f-link">join@matchain.org</a></div><div id="w-node-_091880ea-ca20-568c-3f14-b462b0f84235-b0f841f5" class="footer_links-wrapper col1 hide-mobile-landscape"><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f84236-b0f841f5" href="index.html" class="f-link">Mainnet</a><a id="w-node-_76f9b9c1-6e33-3b7a-81a6-476681ae6d84-b0f841f5" href="index.html" class="f-link">Testnet</a><a id="w-node-_091880ea-ca20-568c-3f14-b462b0f84240-b0f841f5" href="index.html" class="f-link">Network Status</a></div><a id="w-node-_010c257f-7197-0a0b-b76b-3ece5e4eaf56-b0f841f5" href="https://cdn.prod.website-files.com/667bc96c8b26037c3feca0d0/6682bab1e5684b8a27050761_matchain%20-%20Terms-of-use.pdf" target="_blank" class="w-inline-block"><div class="text-size-small"><span>Terms of use </span>| Disclaimer</div></a></div></div><div class="padding-top padding-medium"><div class="footer_bottom-wrapper"><a href="index.html" class="footer_logo-link w-nav-brand"><img src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/66ac74bb0b4e9c269ef43e4d_Matchain%20LOGO%20-%20light%20-%20horizontal.png" loading="lazy" alt=""/></a><div id="w-node-_091880ea-ca20-568c-3f14-b462b0f84246-b0f841f5" class="footer_credit-text">All Rights Reserved © 2024 Matchain</div></div></div></div></div></div></div></footer></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66ac74bb0b4e9c269ef43d28" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/66ac74bb0b4e9c269ef43d28/js/webflow.2f834ffbe.js" type="text/javascript"></script><script src="https://unpkg.com/split-type"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+<script>
+let typeSplit = new SplitType('[animate]', {
+  types: 'lines, words, chars',
+  tagName: 'span'
+})
+
+gsap.from('[animate] .line', {
+  y: '100%',
+  opacity: 0,
+  duration: 0.8,
+  ease: 'power4.inOut',
+  stagger: 0.25,
+  
+})
+</script>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=66d816a7d43faf001a475c3c&product=sop#property=66d816a7d43faf001a475c3c&product=sop' async='async'></script></body></html>
